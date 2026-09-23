@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="basic_calc"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-09-23 12:41:15 p.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMDktMjM7MTE6MzA6MDQgYS7igK9tLjsxMTg3NQ=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMDktMjM7MTI6NDE6MTUgcC7igK9tLjs0OzEyMDA2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="developer: Andersson Arteaga &#13;&#10;algorithm description: basic calculator version 1.0"/>
+            <comment text="step1: define or declare variables"/>
+            <declare name="num1, num2, add, subs, mult, div, avg1, avg2" type="Real" array="False" size=""/>
+            <comment text="step2: initialization&#13;&#10;"/>
+            <assign variable="num1" expression="0"/>
+            <assign variable="num2" expression="0"/>
+            <assign variable="add" expression="0"/>
+            <assign variable="subs" expression="0"/>
+            <assign variable="mult" expression="0"/>
+            <assign variable="div" expression="0"/>
+            <assign variable="avg1" expression="0"/>
+            <assign variable="avg2" expression="0"/>
+            <comment text="step3: inputs (get data)"/>
+            <output expression="&quot;type or enter number one: &quot;" newline="True"/>
+            <input variable="num1"/>
+            <input variable="num2"/>
+            <comment text="step4: procces"/>
+            <assign variable="add" expression="num1 + num2"/>
+            <assign variable="subs" expression="num1 - num2"/>
+            <assign variable="mult" expression="num1 * num2"/>
+            <if expression="num2 = 0">
+                <then>
+                    <output expression="&quot;no divition by zero&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="div = num1/num2" newline="True"/>
+                </else>
+            </if>
+            <assign variable="avg1" expression="(num1 + num2)/2"/>
+            <assign variable="avg2" expression="(add + subs + mult + div) / 4"/>
+            <comment text="step5: display results"/>
+            <output expression="&quot;the addition is: &quot; &amp; add" newline="True"/>
+            <output expression="&quot;the substraction is :&quot; &amp; subs" newline="True"/>
+            <output expression="&quot;the multiplication is: &quot; &amp; mult" newline="True"/>
+            <output expression="&quot;the divition is: &quot; &amp; div" newline="True"/>
+            <output expression="&quot;the average is: &quot; &amp; avg1" newline="True"/>
+            <output expression="&quot;the average2 is: &quot; &amp; avg2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
