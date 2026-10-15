@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="age_category"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 10:38:23 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6MzA6NTMgYS7igK9tLjsxMTg3MQ=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6Mzg6MjMgYS7igK9tLjs0OzExOTg3"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="age" type="Integer" array="False" size=""/>
+            <assign variable="age" expression="0"/>
+            <output expression="&quot;enter an age&quot;" newline="True"/>
+            <input variable="age"/>
+            <if expression="age &gt;= 65">
+                <then>
+                    <output expression="&quot;this person is a senior&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="age&lt;65 and age &gt;=18">
+                        <then>
+                            <output expression="&quot;this person is an adult&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="age&lt;18 and age &gt;=13">
+                                <then>
+                                    <output expression="&quot;this person is a teenager&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="age&lt;13 and age &gt;=0">
+                                        <then>
+                                            <output expression="&quot;this person is a child&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <output expression="&quot;enter a valid age&quot;" newline="True"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="travel_cost"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 11:35:19 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTE6MjA6NDMgYS7igK9tLjsxMTg3MA=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTE6MzU6MTkgYS7igK9tLjs0OzExOTkw"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Days" type="Integer" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <output expression="&quot;enter a days&quot;" newline="True"/>
+            <input variable="Days"/>
+            <if expression="Days&gt;7">
+                <then>
+                    <output expression="&quot;total is: &quot; &amp; (Days * 50) * 0.90" newline="True"/>
+                </then>
+                <else>
+                    <if expression="days&lt;=0">
+                        <then>
+                            <output expression="&quot;invalid enter a valid days&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;total is: &quot; &amp; Days * 50" newline="True"/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

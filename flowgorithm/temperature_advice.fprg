@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="temperature_advice"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-14 11:14:08 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTQ7MTE6MDM6MTkgYS7igK9tLjsxMTg3Mw=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTQ7MTE6MTQ6MDggYS7igK9tLjs2OzExOTg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="declare variables"/>
+            <declare name="temperature" type="Real" array="False" size=""/>
+            <assign variable="temperature" expression="0"/>
+            <output expression="&quot;enter temperature in celcius&quot;" newline="True"/>
+            <input variable="temperature"/>
+            <if expression="temperature&gt;25">
+                <then>
+                    <output expression="&quot;the temperature is hot&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="temperature&gt;10">
+                        <then>
+                            <output expression="&quot;the temperature is comfortamble&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="temperature&lt;10">
+                                <then>
+                                    <output expression="&quot;the temperature is cold&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;enter a valid temperature&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

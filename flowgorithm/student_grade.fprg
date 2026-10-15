@@ -1,0 +1,63 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="student_grade"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 09:59:40 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTQ7MTE6MTQ6MjUgYS7igK9tLjsxMTg3Mg=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MDk6NTk6NDAgYS7igK9tLjsxMTsxMjA0Mw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="score" type="Real" array="False" size=""/>
+            <assign variable="score" expression="0"/>
+            <output expression="&quot;enter a score&quot;" newline="True"/>
+            <input variable="score"/>
+            <if expression="score &gt;= 0 and score &lt; 60">
+                <then>
+                    <output expression="&quot;your grade is: F&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="score&gt;=60 and score&lt;70">
+                        <then>
+                            <output expression="&quot;your grade is: D&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="score&gt;=70 and score&lt;80">
+                                <then>
+                                    <output expression="&quot;your grade is: C&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <if expression="score&gt;=80 and score&lt;90">
+                                        <then>
+                                            <output expression="&quot;your grade is: B&quot;" newline="True"/>
+                                        </then>
+                                        <else>
+                                            <if expression="score&gt;=90 and score &lt;=100">
+                                                <then>
+                                                    <output expression="&quot;your grade is: A&quot;" newline="True"/>
+                                                </then>
+                                                <else>
+                                                    <if expression="score&gt;100">
+                                                        <then>
+                                                            <output expression="&quot;invalid, enter a valid score&quot;" newline="True"/>
+                                                        </then>
+                                                        <else>
+                                                            <output expression="&quot;invalid, enter a valid score&quot;" newline="True"/>
+                                                        </else>
+                                                    </if>
+                                                </else>
+                                            </if>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

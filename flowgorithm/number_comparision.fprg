@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="number_comparision"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 10:46:05 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6Mzk6MTAgYS7igK9tLjsxMTg3Mw=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6NDY6MDUgYS7igK9tLjszOzExOTg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="number1" type="Real" array="False" size=""/>
+            <declare name="number2" type="Real" array="False" size=""/>
+            <assign variable="number1" expression="0"/>
+            <assign variable="number2" expression="0"/>
+            <output expression="&quot;enter a first number&quot;" newline="True"/>
+            <input variable="number1"/>
+            <output expression="&quot;enter a second number&quot;" newline="True"/>
+            <input variable="number2"/>
+            <if expression="number1 &lt; number2">
+                <then>
+                    <output expression="&quot;second number is greater&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="number1 &gt; number2">
+                        <then>
+                            <output expression="&quot;first number is greater&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <if expression="number1 == number2">
+                                <then>
+                                    <output expression="&quot;both numbers are equals&quot;" newline="True"/>
+                                </then>
+                                <else>
+                                    <output expression="&quot;invalid&quot;" newline="True"/>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="fuel_cost"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 10:17:37 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6MDI6MDYgYS7igK9tLjsxMTg2OA=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6MTc6MzcgYS7igK9tLjs3OzExOTky"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="liters" type="Real" array="False" size=""/>
+            <declare name="PricePerLiter" type="Real" array="False" size=""/>
+            <declare name="total" type="Real" array="False" size=""/>
+            <assign variable="liters" expression="0"/>
+            <assign variable="PricePerLiter" expression="0"/>
+            <assign variable="total" expression="0"/>
+            <output expression="&quot;enter a Price Per Liter&quot;" newline="True"/>
+            <input variable="PricePerLiter"/>
+            <output expression="&quot;enter a liters&quot;" newline="True"/>
+            <input variable="liters"/>
+            <if expression="liters&gt;50">
+                <then>
+                    <output expression="&quot;total is: &quot; &amp; liters * 0.95" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;total is: &quot; &amp; liters" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>

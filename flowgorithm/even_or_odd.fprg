@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="even_or_odd"/>
+        <attribute name="authors" value="Lab Programacion"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2026-10-15 10:30:40 a.&#8239;m."/>
+        <attribute name="created" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6MTc6NTQgYS7igK9tLjsxMTg3Nw=="/>
+        <attribute name="edited" value="TGFiIFByb2dyYW1hY2lvbjtFUVVJUE8tMTA4OzIwMjYtMTAtMTU7MTA6MzA6NDAgYS7igK9tLjsyOzExOTc2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="IntegerNumber" type="Integer" array="False" size=""/>
+            <assign variable="IntegerNumber" expression="0"/>
+            <output expression="&quot;Enter an Integer number&quot;" newline="True"/>
+            <input variable="IntegerNumber"/>
+            <if expression="IntegerNumber / 2==0">
+                <then>
+                    <output expression="&quot;this number is even&quot;" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;this number is odd&quot;" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
